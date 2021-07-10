@@ -84,16 +84,16 @@ move_up = False
 
 def eatFood():
     global limit
-    global foodwidth
-    global foodheight
+    global food_width
+    global food_height
     global food_colour
     global char_colour
 
     char_colour = food_colour[:]
 
     limit += 1
-    foodwidth = randint(speed,width - speed)
-    foodheight = randint(speed + font_size, height - speed)
+    food_width = randint(speed,width - speed)
+    food_height = randint(speed + font_size, height - speed)
     food_colour = (randint(10, 255), randint(10, 255), randint(10, 255))
 
 
